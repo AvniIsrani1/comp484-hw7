@@ -7,70 +7,116 @@
 
 /* Global styles 
 ------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-    background: #EFE1D1;
-    font-family: "Exo", sans-serif;
+  background: #efe1d1;
+  font-family: "Exo", sans-serif;
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%; 
+    float: left; 
+    padding-right: 3%; 
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%; 
+    float: left; 
+    min-height: 225px;
 }
 
 /* Headings
 ------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
 }
 
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 h2 {
-    font-size: 35px;
+  font-size: 35px;
+  margin-top: 0;
 }
 h3 {
-    font-size: 28px;
+  font-size: 28px;
 }
 h4 {
-    font-size: 24px;
+  font-size: 24px;
 }
-h5 { 
-    font-size: 20px;
+h5 {
+  font-size: 20px;
 }
 h6 {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 /* Header & Footer 
 ------------------------------------*/
-header, footer {
-    background: #331D2C;
-    color:#ffffff;
+header,
+footer {
+  background: #331d2c;
+  color: #ffffff;
 }
 
 /* Header -------- */
 
-header img {
-    width: 225px;
-    height: 250px;
-    border-radius: 25%;
+header h1,
+header h2 {
+  margin: 0;
+}
+
+.profile-img {
+  /* width: 300px; */
+  border-radius: 50%;
+  /* float: left; */
+  /* margin-right: 30px; */
 }
 
 /* Footer --------*/
 footer a {
-    color: #ffffff;
+  color: #ffffff;
+  text-align: center;
 }
 
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
 
 
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-    background: #A78295;
+  background: #a78295;
 }
-
-
 
 /* Education
 ------------------------------------*/
 .education {
-    background:  #977b95;
+  background: #977b95;
 }
